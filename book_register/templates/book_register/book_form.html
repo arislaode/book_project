@@ -1,0 +1,25 @@
+{% extends "book_register/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="POST" autocomplete="off">
+    {%csrf_token%}
+    {{form.name|as_crispy_field}}
+    {{form.contact|as_crispy_field}}
+    {{form.book|as_crispy_field}}
+    {{form.start_date|as_crispy_field}}
+    {{form.end_date|as_crispy_field}}
+    <div class="row">
+        <div class="col-md-8">
+            <button class="submit btn btn-success btn-block btn-lg"><i class="fas fa-database"></i>Submit</button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'book_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Back to list
+            </a>
+        </div>
+    </div>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends "book_register/base.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Name</td>
+            <td>Book</td>
+            <td>Review</td>
+            <td>Rating</td>
+            <td>Date Review</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for review in review_list %}
+        <tr>
+            <td>{{review.user_name}}</td>
+            <td>{{review.book}}</td>
+            <td>{{review.comment}}</td>
+            <td>{{review.rating}}</td>
+            <td>{{review.pub_date}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="{% url 'review' %}" class="btn btn-secondary btn-block btn-lg">
+            <i class="fas fa-stream"></i> Back to Review
+        </a>
+    </div>
+</div>
+{% endblock content %}
