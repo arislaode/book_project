@@ -43,6 +43,11 @@
 
   - Ubah dan hapus data list buku sesuai kebutuhan.
 
+# Review & Rating
+
+  - Buat Review & pilih Rating, buka url --> http://127.0.0.1:8000/book/review/
+  - Lihat list Review & Rating, buka url --> http://127.0.0.1:8000/book/review-list/ 
+
 # Rest API & Authentication
 
   - Untuk mengecek Rest API , buka link http://127.0.0.1:8000/api/order/
@@ -79,3 +84,7 @@
 
 # Get Data Member
   - Get data membernya dengan membuka url berikut pada browser --> http://127.0.0.1:8000/api/order/1/
+
+# Testing
+
+  - Jalankan perintah testing dengan perintah berikut --> python manage.py test
