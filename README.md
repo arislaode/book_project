@@ -88,3 +88,6 @@
 # Testing
 
   - Jalankan perintah testing dengan perintah berikut --> python manage.py test
+  
+# Video Demo Project
+  - Silahkan buka url -> https://bit.ly/38uM496
