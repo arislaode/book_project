@@ -6,7 +6,7 @@ attrs==19.3.0
 Babel==2.8.0
 beautifulsoup4==4.4.1
 blinker==1.4
-bottle==0.12.18
+bottle==0.12.19
 Click==7.0
 cloudpickle==1.2.2
 coverage==5.0.3
